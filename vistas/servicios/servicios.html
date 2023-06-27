@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <title>MT FILMS</title>
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-secondary">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="../../index.html"> <img src="../../imagenes/logo-mt-negro.png" alt="logo mtfilms" id="mt"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="..\..\index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Nosotros/nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../Arriendos/arriendos.html">Arriendos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../contacto/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Servicios</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center"> 
+          <h2 class="mb-0 me-3">Fecha actual:</h2>
+          <p id="fecha" class="mb-0"></p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </nav>
+  <div style="position: relative;">
+    <div class="container" style="margin-top: 20px; position: relative; z-index: 1;">
+      <div class="row justify-content-center">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 bg-black">
+            <div class="card-body">
+              <h5 class="card-title">Nuestros servicios de artículos audiovisuales</h5>
+              <p class="card-text">Esta página de venta de artículos de audiovisuales ofrece una amplia variedad de
+                servicios y productos relacionados con la grabación, edición y reproducción de contenido multimedia. En
+                esta página se pueden encontrar cámaras de vídeo, micrófonos, grabadoras de sonido, mezcladoras de
+                audio, software de edición y muchos otros productos relacionados con la producción audiovisual. Además,
+                esta página también puede ofrecer servicios de asesoramiento técnico, soporte técnico, reparación de
+                equipos y cursos de formación en técnicas de producción de video y audio. Los clientes pueden hacer sus
+                compras directamente en línea, elegir entre una amplia variedad de marcas y modelos, y recibir sus
+                productos en la comodidad de su hogar. En resumen, una página de venta de artículos de audiovisuales es
+                una excelente opción para aquellos que necesitan equipos y herramientas de alta calidad para sus
+                proyectos de producción de contenido multimedia.</p>
+              <a href="../Nosotros/nosotros.html">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Mas informacion</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 bg-black">
+            <div class="card-body">
+              <h5 class="card-title">Cuestionario de Servicios</h5>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nombre:</label>
+                  <input type="text" id="name" class="form-control" />
+                  <span id="name-error" class="error"></span>
+                </div>
+
+                <div class="mb-3">
+                  <label for="appaterno" class="form-label">Apellido paterno:</label>
+                  <input type="text" id="appaterno" class="form-control" />
+                  <span id="appaterno-error" class="error"></span>
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" id="email" name="email" class="form-control">
+                  <span id="email-error" class="error"></span>
+                </div>
+
+                <div class="form-buttons">
+                  <button id="benviar" class="btn btn-primary">Enviar</button>
+                </div>
+              </form>
+
+
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-image"
+    style="background-image: url('../../imagenes/comprar-o-alquilar-material-audiovisual.jpg'); height: 400px; position: relative; top: 0; left: 0; z-index: 0;">
+  </div>
+  </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"
+      integrity="sha384-+toKXd9C9YH8Nku//Jc/36Eei1UXc/Chlr+oywLYB6d+tx6pdJX6vKj2O5xHzOg"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-ZFqaJUnFXIZG1N0zhv9XWQvr8bV/ADH/OWFsqL99QapCxmtB+ZKjJ8W0YAiFvI4D"
+      crossorigin="anonymous"></script>
+
+
+
+    <!--Script bootstrap-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/formularioRegistro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>

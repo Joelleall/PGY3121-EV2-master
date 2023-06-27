@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="../../imagenes/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    
+</head>
+<body>
+
+  <header>
+    
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="../../index.html"> <img src="../../imagenes/logo-mt-negro.png" alt="logo mtfilms" id="mt"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="..\..\index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Nosotros/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Arriendos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../contacto/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../servicios/servicios.html">Servicios</a>
+            </li>
+          </ul>
+          <div id="toast"></div>
+          <div class="d-flex align-items-center">
+            <h2 class="mb-0 me-3">Fecha actual:</h2> 
+            <p id="fecha" class="mb-0"></p> 
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <button id="carrito-btn">
+    <img src="/imagenes/imagen de carrito.png" alt="Ver carrito">
+</button>
+<div id="carrito">
+    <h2>Mi Carrito</h2>
+    <div id="items-carrito"></div>
+    <h2 id="total">Total: $0</h2>
+    
+
+</div>
+
+  <main>
+    <section id="camaras" class="my-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Cámaras</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 bg-black">
+              <img src="../../imagenes/camara1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Canon EOS R5</h5>
+                <p class="card-text"> una cámara de fotograma completo sin espejo que cuenta con una resolución de 45 megapíxeles y es capaz de grabar vídeo en 8K.</p>
+                <a href="" class="btn btn-primary">                  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart" viewBox="0 1 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                  Arrendar ahora
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 bg-black">
+              <img src="../../imagenes/portada-reflex.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sony A7 III</h5>
+                <p class="card-text">una cámara sin espejo de fotograma completo con una resolución de 24 megapíxeles y un enfoque automático rápido y preciso.</p>
+                <a href="#" class="btn btn-primary">                  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart" viewBox="0 1 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                  Arrendar ahora
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 bg-black">
+              <img src="../../imagenes/carama3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Nikon D850</h5>
+                <p class="card-text">es una cámara réflex digital de alta resolución con un sensor de 45.7 megapíxeles y un sistema de enfoque automático de alta velocidad y precisión.</p>
+                <a href="#" class="btn btn-primary">                  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart" viewBox="0 1 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                  Arrendar ahora
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="lentes" class="my-5 ">
+      <div class="container">
+        <h2 class="text-center mb-4">lentes</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 bg-black">
+              <img src="../../imagenes/lente1.jpg" class="card-img-top" alt="lente1">
+              <div class="card-body">
+                <h5 class="card-title">Canon EF 50mm f/1.8 STM</h5>
+                <p class="card-text">es un lente zoom estándar de alta calidad con una apertura máxima constante de f/2.8, ideal para fotografía de paisajes, retratos y eventos en condiciones de poca luz.</p>
+                <a href="#" class="btn btn-primary">                  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart" viewBox="0 1 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                  Arrendar ahora
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 bg-black">
+              <img src="../../imagenes/lente3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Nikon AF-S 70-200mm f/2.8E</h5>
+                <p class="card-text">es un lente zoom telefoto profesional con una apertura máxima constante de f/2.8, ideal para fotografía deportiva, de vida salvaje y eventos en condiciones de poca luz.</p>
+                <a href="#" class="btn btn-primary">                  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart" viewBox="0 1 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                  Arrendar ahora
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 bg-black">
+              <img src="../../imagenes/lente.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sony FE 24-70mm f/2.8 GM</h5>
+                <p class="card-text">es un lente zoom estándar de alta calidad con una apertura máxima constante de f/2.8, ideal para fotografía de paisajes, retratos y eventos en condiciones de poca luz.</p>
+                <a href="#" class="btn btn-primary">                  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart" viewBox="0 1 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                  Arrendar ahora
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="drones" class="my-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Drones</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 bg-black">
+              <img src="../../imagenes/dron5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">dron DJI Mavic 2 Pro</h5>
+                <p class="card-text">es un dron plegable con una cámara Hasselblad de 20 megapíxeles, capaz de grabar vídeo en 4K HDR y equipado con tecnología de evitación de obstáculos, ideal para fotografía aérea profesional de todos lados, alcanza el maximo provecho con la ultima tecnologia que te ofrece esta increible camara.</p>
+                <a href="#" class="btn btn-primary">                  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart" viewBox="0 1 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                  Arrendar ahora
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 bg-black">
+              <img src="../../imagenes/dron2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">dron DJI Phantom 4 Pro V2.0</h5>
+                <p class="card-text">es un dron con una cámara de 20 megapíxeles capaz de grabar vídeo en 4K a 60fps, equipado con un sistema de detección de obstáculos de cinco direcciones y una autonomía de vuelo de hasta 28 minutos, ideal para fotografía y videografía aérea profesional.</p>
+                <a href="#" class="btn btn-primary">                  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart" viewBox="0 1 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                  Arrendar ahora
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 bg-black">
+              <img src="../../imagenes/dron3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">dron DJI Mini 2</h5>
+                <p class="card-text">es un dron ultraligero con una cámara de 12 megapíxeles capaz de grabar vídeo en 4K, equipado con un sistema de detección de obstáculos de tres direcciones y una autonomía de vuelo de hasta 31 minutos, ideal para fotografía y videografía aérea de aficionados y viajeros.</p>
+                <a href="#" class="btn btn-primary">                  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart" viewBox="0 1 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                  Arrendar ahora
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="equipos" class="my-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Equipos de producción</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 bg-black">
+              <img src="../../imagenes/equipodeproduccion1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sony PXW-FS7 II</h5>
+                <p class="card-text">cámara y accesorios de alta gama, con una cámara Super 35 con una resolución de 4K y capacidad de grabar en formato RAW, así como un sistema de estabilización de imagen y un conjunto de lentes intercambiables, ideal para la producción de cine y video profesional</p>
+                <a href="#" class="btn btn-primary">                  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart" viewBox="0 1 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                  Arrendar ahora
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="../../imagenes/istockphoto-1285511074-612x612.jpg" class="card-img-top" alt="...">
+              <div class="card-body bg-black">
+                <h5 class="card-title">Blackmagic URSA </h5>
+                <p class="card-text">conjunto de cámara y accesorios de alta calidad, con una cámara Super 35 con una resolución de 4.6K y capacidad de grabar en formato RAW, así como un sistema de montaje de lente intercambiable y opciones de conectividad avanzadas, ideal para la producción de cine y video profesional.</p>
+                <a href="#" class="btn btn-primary">                  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart" viewBox="0 1 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                  Arrendar ahora
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 bg-black">
+              <img src="../../imagenes/audiovisual.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Canon EOS C300 Mark III </h5>
+                <p class="card-text">cámara y accesorios de alta gama, con una cámara Super 35 con una resolución de 4K y capacidad de grabar en formato RAW, así como un sistema de enfoque automático Dual Pixel CMOS y una gran variedad de opciones de grabación, ideal para la producción de cine y video profesional.</p>
+                <a href="#" class="btn btn-primary">                  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart" viewBox="0 1 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                  Arrendar ahora
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    
+    <footer class="bg-dark text-white py-3">
+      <div class="container text-center">
+        <p>&copy; 2023 MT FILMS</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"
+      integrity="sha384-+toKXd9C9YH8Nku//Jc/36Eei1UXc/Chlr+oywLYB6d+tx6pdJX6vKj2O5xHzOg"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-ZFqaJUnFXIZG1N0zhv9XWQvr8bV/ADH/OWFsqL99QapCxmtB+ZKjJ8W0YAiFvI4D"
+      crossorigin="anonymous"></script>
+
+
+
+    <!--Script bootstrap-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/formularioRegistro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
